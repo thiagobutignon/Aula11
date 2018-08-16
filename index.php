@@ -86,5 +86,16 @@
     }
 
     ?>
+
+<h2>Exercício 7</h2>
+<?php
+    $quantidadeDeAlunos = 0;
+
+    if ($quantidadeDeAlunos) {
+        echo "true";
+    } else {
+        echo "false";
+    }
+?>
 </body>
 </html>
