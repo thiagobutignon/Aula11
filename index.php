@@ -65,37 +65,55 @@
     }
 ?>
 
-<h2>Exercício 6</h2>
-<?php
-    $idade = rand(1,99);
-    $casado = true;
-    $sexo = "Outro";
-    if ($idade > 18 && $casado == true && $sexo == "Masculino"){
-        echo "<p>Boas-vindas $idade </p>";
-    } else {
-        echo "<p>Você não é bem vindo aqui!</p>";
-    }
-?>
+    <h2>Exercício 6</h2>
+        <?php
+            $idade = rand(1,99);
+            $casado = true;
+            $sexo = "Outro";
+            if ($idade > 18 && $casado == true && $sexo == "Masculino"){
+                echo "<p>Boas-vindas $idade </p>";
+            } else {
+                echo "<p>Você não é bem vindo aqui!</p>";
+            }
+        ?>
 
-<h2> Exercício 6A</h2>
-<?php
-    if ($sexo == "Outro"){
-        echo "<p>Seja muito bem vindo!</p>";
-    } else {
-        echo "<p>Você não deveria estar vendo essa mensagem</p>";
-    }
+    <h2> Exercício 6A</h2>
+        <?php
+            if ($sexo == "Outro"){
+                echo "<p>Seja muito bem vindo!</p>";
+            } else {
+                echo "<p>Você não deveria estar vendo essa mensagem</p>";
+            }
 
-    ?>
+            ?>
 
-<h2>Exercício 7</h2>
-<?php
-    $quantidadeDeAlunos = 0;
+    <h2>Exercício 7</h2>
+        <?php
+            $quantidadeDeAlunos = 0;
 
-    if ($quantidadeDeAlunos) {
-        echo "true";
-    } else {
-        echo "false";
-    }
-?>
+            if ($quantidadeDeAlunos) {
+                echo "true";
+            } else {
+                echo "false";
+            }
+        ?>
+    <h2>Exercício 8</h2>
+        <?php 
+            if ($i = 0) {
+                echo "<p>true</p>";
+            } else {
+                echo "<p>false</p>";
+            }
+        ?>
+    <h3>Se trocamos 1 por 0, o que é impresso?</h3>
+    <p>Quando colocamos $i = 1 é impresso verdadeiro. Quando o valor é igual a $i = 0 é impresso falso</p>
+    <h2>Exercício 9</h2>
+        <?php 
+            $numero = rand(1,10);
+            $parOuImpar = ($numero % 2 == 0 ? "é par" :  "é impar");
+            echo "<p> $numero $parOuImpar";
+        ?>
+
+    <h2>Exercício 10</h2>
 </body>
 </html>
