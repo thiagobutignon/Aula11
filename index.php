@@ -66,6 +66,25 @@
 ?>
 
 <h2>Exercício 6</h2>
+<?php
+    $idade = rand(1,99);
+    $casado = true;
+    $sexo = "Outro";
+    if ($idade > 18 && $casado == true && $sexo == "Masculino"){
+        echo "<p>Boas-vindas $idade </p>";
+    } else {
+        echo "<p>Você não é bem vindo aqui!</p>";
+    }
+?>
 
+<h2> Exercício 6A</h2>
+<?php
+    if ($sexo == "Outro"){
+        echo "<p>Seja muito bem vindo!</p>";
+    } else {
+        echo "<p>Você não deveria estar vendo essa mensagem</p>";
+    }
+
+    ?>
 </body>
 </html>
