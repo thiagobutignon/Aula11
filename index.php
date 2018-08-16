@@ -115,5 +115,29 @@
         ?>
 
     <h2>Exercício 10</h2>
+            <?php 
+                $i = mt_rand(1,10);
+                switch ($i){
+                    case 1:
+                        echo "<p>i é igual a $i</p>";
+                        break;
+                    case 2:
+                        echo "<p>i é igual a $i</p>";
+                        break;
+                    case 3:
+                        echo "<p>i é igual a $i</p>";
+                        break;
+                    case 4:
+                        echo "<p>i é igual a $i</p>";
+                        break;
+                    case 5:
+                        echo "<p>i é igual a $i</p>";
+                        break;
+                    default:
+                        echo "<p>Número $i fora do escopo</p>";
+                        break;
+                }
+            ?>
+    
 </body>
 </html>
